@@ -3,3 +3,56 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* ------- navigation bar ---------  */
+
+nav{
+    height: 7vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(255, 44, 44);
+}
+ul li{
+    display: inline-block;
+    margin-left: 35px;
+    font-size: 20px;
+}
+
+ /* --------- header section ---------- */
+
+.header-container{
+    display: flex;
+    height: 93vh;
+    background-color: rgb(255, 194, 80);
+}
+.slogan,.img{
+    flex: 1;
+}
+.slogan{
+    margin:200px 0 0  150px ;
+}
+.slogan h1{
+    font-size: 50px;
+    color: orange;
+}
+.slogan .btn{
+    border: 1px solid black;
+    padding: 10px;
+    margin-top: 50px;
+    background-color: orange;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+ /* ----------- food category ------------ */
+
+.food-category{
+    margin: 20%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.food{
+    background-color: red;
+    width: 250px;
+    height: 350px;
+}
