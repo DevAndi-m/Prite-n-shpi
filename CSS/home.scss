@@ -1,0 +1,116 @@
+$dark: #4C4C6D;
+$teal: #1B9C85;
+$white: #E8F6EF;
+$yell: #FFE194;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: $teal;
+    align-items: center;
+
+    .logo {
+        img {
+            width: 120px;
+        }
+    }
+
+    .navigation {
+        ul {
+            display: flex;
+            align-items: center;
+
+            li {
+                color: $yell;
+                border-right:  solid 0.01px;
+                padding-right: 30px;
+                margin-right: 30px;
+                list-style: none;
+
+                .login {
+                    color: $yell;
+                    background-color: transparent;
+                    font-weight: 500;
+                    letter-spacing: 2px;
+                    font-weight: 700;
+                    text-decoration: underline;
+                    padding: 15px 0px;
+                    border: none;
+                }
+
+                .signin {
+                    color: $teal;
+                    font-weight: 800;
+                    letter-spacing: 2px;
+                    padding: 15px 10px;
+                    border: none;
+                    background-color: $yell;
+                }
+            }
+        }
+    }
+}
+
+section {
+    background-image: url("/IMG/piza.jpg");
+    width: 100%;
+    height:40em;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .description {
+        position: absolute;
+        width: 40%;
+        margin: 50px;
+        display: flex;
+        flex-direction: column;
+    
+        .status-price {
+            background-color: black;
+            width: fit-content;
+            color: white;
+            padding: 20px 10px;
+            font-size: 25px;
+            font-weight: 1000;
+            margin-bottom: 20px;
+        }
+        .name {
+            padding: 20px;
+            font-size: 40px;
+            line-height: 2.3em;
+            background-color: #4C4C6D;
+            color: white;
+            width: fit-content;
+            margin-bottom: 20px;
+        }
+    
+        .order {
+            border: none;
+            background-color: $teal;
+            width: fit-content;
+            color: $white;
+            padding: 20px 10px;
+            font-size: 25px;
+            font-weight: 1000;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+    }
+        
+}
+
+
+
+
+
