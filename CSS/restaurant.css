@@ -2,26 +2,57 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 .img-box{
     background-color: orange;
-    width: 200px;
-    height: 150px;
+    width: 280px;
+    height: 200px;
     border-radius: 20px 20px 0 0;
+}
+.head-title{
+    margin: 50px;
+    font-size: 40px;
+    text-align: center;
+    display: inline-block;
+    border-bottom: 3px solid black;
+    padding-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 .container{
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    flex-direction: column;
+    margin-top: 30px;
 }
 .container-child{
-    border: 1px solid red;
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
 }
 .restaurant-card{
-    border: 1px solid black;
+    border: 1.2px solid black;
     border-radius: 20px;
+}
+.restaurant-card i,.menu-btn,.rest-name,.cat-name{
+    margin: 15px;
+}
+.cat-name{
+    color: rgba(0, 0, 0, 0.5);
+}
+.menu-btn{
+    font-size: 15px;
+    font-weight: bold;
+    background-color: orange;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .2s ease;
+}
+.menu-btn:hover{
+    transform:scale(1.03);
 }
