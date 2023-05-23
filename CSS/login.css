@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+}
+.log-btn{
+    background-color: red;
+    width: 100px;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    border: none;
+
+}
