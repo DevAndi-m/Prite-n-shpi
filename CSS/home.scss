@@ -63,7 +63,7 @@ header {
 }
 
 section {
-    background-image: url("/IMG/piza.jpg");
+    background-image: url("/IMG/food.jpg");
     width: 100%;
     height:50em;
     background-repeat: no-repeat;
@@ -109,18 +109,111 @@ section {
     }    
 }
 
+nen-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    grid-gap: 15px;
+    padding: 15px;
+
+    background-color: $white;
+
+    .item1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: $dark;
+    } 
+
+    .item2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: $dark;
+    }
+
+    .item3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: $dark;
+    }
+
+    .item4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: $dark;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .item1-desc {
+        position: absolute;
+        text-align: center;
+
+        display: none;
+
+        font-size: 2em;
+        color: $white;
+        row-gap: 50px;
+
+        p {
+            font-size: 1em;
+        }
+
+        button {
+            margin-top: 25px;
+            padding: 20px 15px;
+            background-color: $teal;
+            border: none;
+            font-size: 15px;
+            font-weight: bolder;
+            color: $white;
+        }
+    }
+
+    .item2-desc {
+        position: absolute;
+        text-align: center;
+
+        background-color: #1B9C85;
+    }
+
+    .item3-desc {
+        position: absolute;
+        text-align: center;
+
+        background-color: #1B9C85;
+    }
+
+    .item4-desc {
+        position: absolute;
+        text-align: center;
+
+        background-color: #1B9C85;
+    }
+}
+
 article {
     display: flex;
     width: 100%;
     background-color: $dark;
-  }
+}
 
 .article-description {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 50%;
-    margin-left: 20px;
+    width: 40%;
+    margin-left: 25px;
     padding-right: 10%;
     gap: 20px;
   
@@ -141,14 +234,13 @@ article {
     font-size: 20px;
     border: none;
     background-color: $teal;
-    color: $yell;
+    color: $white;
   }
 }
 
 .article-image {
-  flex: 0 0 50%;
+  flex: 0 0 60%;
   overflow: hidden; 
-  border-left: 20px solid $white;
 }
 
 .article-image img {
@@ -163,6 +255,22 @@ article {
     h2 {
         color: $white;
         display: none;
+    }
+}
+
+app-info {
+    display: flex;
+
+    .left {
+        width: 40%;
+    }
+
+    img {
+        width: 30%;
+    }
+
+    .right {
+        width: 30%;
     }
 }
 
