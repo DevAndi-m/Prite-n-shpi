@@ -84,6 +84,7 @@ section {
     height:50em;
     background-repeat: no-repeat;
     background-size: cover;
+    transition: opacity 0.5s;
 
     .description {
         position: absolute;
@@ -102,13 +103,14 @@ section {
             margin-bottom: 20px;
         }
         .name {
-            padding: 20px;
+            padding: 20px 40px;
             font-size: 40px;
             line-height: 2.3em;
             background-color: #4C4C6D;
             color: white;
             width: fit-content;
             margin-bottom: 20px;
+            transition: transform 0.3s ease-in-out;
         }
     
         .order {
@@ -121,11 +123,10 @@ section {
             font-weight: 1000;
             margin-top: 50px;
             margin-bottom: 20px;
-            transition: width 1s ease-in-out;
         }
 
-        .order:hover {
-            width: 100%;
+        .name:hover {
+            transform: scale(1.05);
         }
     }    
 }
@@ -325,6 +326,11 @@ nen-section {
             font-size: 15px;
             font-weight: bolder;
             color: $white;
+            transition: transform 1s ease-in-out;
+        }
+
+        button:hover {
+            transform: scale(1.1);
         }
 
         transition: opacity 0.4s;
@@ -451,6 +457,7 @@ app-info {
 
     .right {
         width: fit-content;
+        text-align: right;
 
         h1 {
             font-size: 40px;
@@ -536,6 +543,7 @@ footer {
         }    
         
         .right-info {
+            text-align: right;
             h1 {
                 font-size: 50px;
                 margin-bottom: 10px;
