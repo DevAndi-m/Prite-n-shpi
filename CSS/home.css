@@ -370,8 +370,7 @@ app-info .middle {
 }
 app-info .middle img {
   height: 400px;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: auto;
 }
 app-info .right {
   width: -moz-fit-content;
@@ -431,6 +430,14 @@ footer {
   color: #E8F6EF;
   padding: 30px;
   margin-top: 80px;
+}
+footer a {
+  text-decoration: none;
+  color: #E8F6EF;
+  transition: color 0.3s;
+}
+footer a:hover {
+  color: #1B9C85;
 }
 footer .info-tab {
   display: flex;

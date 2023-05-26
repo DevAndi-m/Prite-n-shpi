@@ -1,58 +1,65 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-.img-box{
-    background-color: orange;
-    width: 280px;
-    height: 200px;
-    border-radius: 20px 20px 0 0;
-}
-.head-title{
-    margin: 50px;
-    font-size: 40px;
-    text-align: center;
-    display: inline-block;
-    border-bottom: 3px solid black;
-    padding-bottom: 5px;
-    margin-left: auto;
-    margin-right: auto;
 
+body {
+  background-color: #E8F6EF;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.container{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 30px;
+
+header {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #4C4C6D;
+  align-items: center;
 }
-.container-child{
-    margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+header a {
+  text-decoration: none;
+  color: #E8F6EF;
+  transition: color 0.3s, transform 0.3s;
 }
-.restaurant-card{
-    border: 1.2px solid black;
-    border-radius: 20px;
+header .active {
+  color: #1B9C85;
+  border-bottom: #1B9C85 solid 2px;
 }
-.restaurant-card i,.menu-btn,.rest-name,.cat-name{
-    margin: 15px;
+header a:hover {
+  color: #1B9C85;
+  transform: scale(1.1);
 }
-.cat-name{
-    color: rgba(0, 0, 0, 0.5);
+header .logo img {
+  width: 120px;
 }
-.menu-btn{
-    font-size: 15px;
-    font-weight: bold;
-    background-color: orange;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: .2s ease;
+header .navigation ul {
+  display: flex;
+  align-items: center;
 }
-.menu-btn:hover{
-    transform:scale(1.03);
+header .navigation ul li {
+  color: #E8F6EF;
+  border-right: solid 0.01px;
+  padding-right: 30px;
+  margin-right: 30px;
+  list-style: none;
 }
+header .navigation ul li .login {
+  color: #E8F6EF;
+  background-color: transparent;
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-weight: 700;
+  padding: 15px 0px;
+  border: none;
+}
+header .navigation ul li .signin {
+  color: #E8F6EF;
+  font-weight: 800;
+  letter-spacing: 2px;
+  padding: 15px 10px;
+  border: none;
+  background-color: #1B9C85;
+  transition: transform 0.3s;
+}
+header .navigation ul li .signin:hover {
+  transform: scale(1.1);
+}/*# sourceMappingURL=restaurant.css.map */

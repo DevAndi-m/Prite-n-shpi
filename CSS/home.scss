@@ -523,6 +523,17 @@ footer {
     padding: 30px;
     margin-top: 80px;
 
+    a {
+        text-decoration: none;
+        color: $white;
+        transition: color 0.3s;
+    }
+
+    a:hover {  
+        color: $teal;
+        ;
+    }
+
     .info-tab {
         display: flex;
         justify-content: space-around;
